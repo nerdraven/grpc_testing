@@ -1,0 +1,11 @@
+
+syntax = "proto3";
+
+message Hello {
+  string message = 1;
+}
+
+
+service Echo {
+  rpc SayHello (Hello) returns (Hello);
+}
